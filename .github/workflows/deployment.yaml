@@ -23,7 +23,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: lint-format
     steps:
       - name: Clone repo
         uses: actions/checkout@v4
