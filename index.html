@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite + TS</title>
+  <link rel="stylesheet" href="/src/styles/index.css">
+  <title>Consulta Actas CNE</title>
 </head>
 
 <body>
@@ -14,12 +15,13 @@
   </h1>
   <form>
     <label for="cedula">Busca por cédula</label>
-    <input type="search" id="name" name="name" placeholder="V-" required pattern="/\d/g" />
+    <input type="search" id="cedula" name="cedula" placeholder="V-" required />
     <button type="submit">consultar</button>
   </form>
+  <div class="result"></div>
 
 
-  <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/scripts/main.ts"></script>
 </body>
 
 </html>
