@@ -1,14 +1,17 @@
 {
-  "name": "my-vue-app",
+  "name": "gano-venezuela",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
+    "dev": "vite",
+    "format": "pnpm biome format .",
+    "lint": "pnpm biome check .",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   },
